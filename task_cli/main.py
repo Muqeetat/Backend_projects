@@ -165,4 +165,6 @@ elif args.operation == "mark-done":
 
 elif args.operation == "delete":
     deleteTask()
+else:
+    print(f"Error: Unsupported operation '{args.operation}'. Use -h for help.")
 
