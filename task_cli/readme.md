@@ -1,6 +1,15 @@
 # Task Tracker CLI
 Sample solution for the [task-tracker](https://roadmap.sh/projects/task-tracker) challenge from [roadmap.sh](https://roadmap.sh/). 
 
+## How to run
+
+Clone the repository and run the following command:
+
+```bash
+git clone https://github.com/Muqeetat/Backend_projects.git
+cd Backend_projects/task_cli
+```
+
 ## Features
 
 - **Add a new task**: Add a task with a description.
