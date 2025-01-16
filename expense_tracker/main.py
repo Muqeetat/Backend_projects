@@ -1,6 +1,7 @@
 import calendar  # To get month names
 import argparse
 import json
+import csv
 from datetime import datetime
 
 
@@ -129,6 +130,22 @@ def saveFile():
         json.dump(expenses, file, indent=4)
 
 
+def exportToCSV():
+    # Define the CSV file name
+    filename = "expenses.csv"
+    # Check if there are expenses to export
+    if expenses:
+        with open(filename, mode="w", newline="", encoding="utf-8") as file:
+            # Write the header row
+            writer = csv.writer(file)
+            writer.writerow(["ID", "Date", "Description","Expense Type", "Amount"])
+            # Write each expense as a row in the CSV
+            for expense in expenses:
+                writer.writerow([expense["id"], expense["date"], expense["description"],expense["type"],expense["amount"]])
+        print(f"Expenses exported successfully to '{filename}'.")
+    else:
+        print("No expenses to export.")
+
 
 # Initialize the parser
 parser = argparse.ArgumentParser(description="Expense tracker CLI to manage your finances")
@@ -156,6 +173,9 @@ elif args.operation == "summary":
 
 elif args.operation == "delete":
     deleteExpense()
+
+elif args.operation == "export":
+    exportToCSV()
 
 else:
     print(f"Error: Unsupported operation '{args.operation}'. Use -h for help.")
