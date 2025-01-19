@@ -1,6 +1,6 @@
 # Number Guessing Game CLI
 
-Sample solution for the [Expense Tracker](https://roadmap.sh/projects/number-guessing-game) challenge from [roadmap.sh](https://roadmap.sh/).
+Sample solution for the [Number Guessing Game](https://roadmap.sh/projects/number-guessing-game) challenge from [roadmap.sh](https://roadmap.sh/).
 
 
  Run the script in a Python-supported environment:
