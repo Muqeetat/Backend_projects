@@ -6,3 +6,4 @@ This repository contains a list of project solutions for the [Backend Developer]
 1. [Task Tracker](https://roadmap.sh/projects/task-tracker)
 2. [Expense Tracker](https://roadmap.sh/projects/expense-tracker)
 3. [Number Guessing Game](https://roadmap.sh/projects/number-guessing-game)
+4. [Github User Activity](https://roadmap.sh/projects/github-user-activity)
